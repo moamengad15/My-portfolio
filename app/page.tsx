@@ -485,9 +485,12 @@ export default function Portfolio() {
                   variant="outline"
                   size="sm"
                   className="w-full bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all group-hover:scale-105"
+                  asChild
                 >
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  View Project
+                  <a href="/noiceland" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Visit Site
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -534,9 +537,12 @@ export default function Portfolio() {
                   variant="outline"
                   size="sm"
                   className="w-full bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all group-hover:scale-105"
+                  asChild
                 >
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  View Project
+                  <a href="https://moamengad15.github.io/my-website-cars/" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Visit Site
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -583,9 +589,12 @@ export default function Portfolio() {
                   variant="outline"
                   size="sm"
                   className="w-full bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all group-hover:scale-105"
+                  asChild
                 >
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  View Project
+                  <a href="https://moamengad15.github.io/food-lover/" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Visit Site
+                  </a>
                 </Button>
               </CardContent>
             </Card>
