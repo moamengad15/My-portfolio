@@ -73,7 +73,7 @@ export default function Portfolio() {
             className={`relative w-40 h-40 mx-auto mb-8 transition-all duration-1000 ${isVisible ? "scale-100 opacity-100" : "scale-50 opacity-0"}`}
           >
             <Image
-              src="/moamen-gad-professional-photo.jpg"
+              src="/professional-headshot-of-young-male-software-devel.jpg"
               alt="Moamen Gad - Professional Photo"
               width={160}
               height={160}
@@ -178,8 +178,8 @@ export default function Portfolio() {
               <Card className="h-full bg-gray-800/50 border-gray-700 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-1">
                 <CardContent className="p-8">
                   <p className="text-lg text-gray-300 leading-relaxed text-pretty mb-6">
-                    As a fourth-year computer science student and Frontend developer with a strong foundation in
-                    computer science and expertise in modern web development technologies. I'm passionate about building
+                    As a third-year computer science student and Frontend developer with a strong foundation in computer
+                    science and expertise in modern web development technologies. I'm passionate about building
                     responsive, user-friendly, and visually engaging web applications.
                   </p>
                   <p className="text-lg text-gray-300 leading-relaxed text-pretty">
@@ -194,22 +194,22 @@ export default function Portfolio() {
                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
                   <Award className="w-6 h-6 text-blue-400" />
                 </div>
-                <h3 className="font-semibold text-lg text-white">High Performance</h3>
-                <p className="text-sm text-gray-400">Exceptional Project Quality</p>
+                <h3 className="font-semibold text-2xl text-white animate-pulse">96%</h3>
+                <p className="text-sm text-gray-400">Performance Score</p>
               </Card>
               <Card className="text-center p-6 bg-gray-800/50 border-gray-700 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 hover:-translate-y-1 group">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
                   <Zap className="w-6 h-6 text-blue-400" />
                 </div>
-                <h3 className="font-semibold text-lg text-white">Mobile Responsive</h3>
-                <p className="text-sm text-gray-400">Enhanced User Experience</p>
+                <h3 className="font-semibold text-2xl text-white animate-pulse">30%</h3>
+                <p className="text-sm text-gray-400">Mobile Responsiveness</p>
               </Card>
               <Card className="text-center p-6 bg-gray-800/50 border-gray-700 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 hover:-translate-y-1 group">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
                   <ExternalLink className="w-6 h-6 text-blue-400" />
                 </div>
-                <h3 className="font-semibold text-lg text-white">User Engagement</h3>
-                <p className="text-sm text-gray-400">Improved Interactions</p>
+                <h3 className="font-semibold text-2xl text-white animate-pulse">25%</h3>
+                <p className="text-sm text-gray-400">User Engagement</p>
               </Card>
             </div>
           </div>
@@ -421,13 +421,58 @@ export default function Portfolio() {
               </div>
             </CardHeader>
             <CardContent className="p-8">
-              <div className="text-center">
-                <h4 className="font-semibold text-lg text-white mb-6">Key Achievement</h4>
-                <div className="inline-flex items-center gap-3 p-4 bg-purple-500/10 border border-purple-500/20 rounded-lg">
-                  <div className="w-3 h-3 bg-purple-400 rounded-full animate-pulse"></div>
-                  <span className="text-lg text-white font-medium">
-                    Delivered a project that earned a 96% performance score
-                  </span>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <h4 className="font-semibold text-lg text-white mb-3">Key Achievements</h4>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3 p-3 bg-green-500/10 border border-green-500/20 rounded-lg">
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                      <span className="text-sm text-gray-300">
+                        Enhanced mobile responsiveness by <strong className="text-green-400">30%</strong>
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-3 p-3 bg-blue-500/10 border border-blue-500/20 rounded-lg">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      <span className="text-sm text-gray-300">
+                        Improved user engagement by <strong className="text-blue-400">25%</strong>
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-3 p-3 bg-purple-500/10 border border-purple-500/20 rounded-lg">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <span className="text-sm text-gray-300">
+                        Delivered project with <strong className="text-purple-400">96%</strong> performance score
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-3 p-3 bg-orange-500/10 border border-orange-500/20 rounded-lg">
+                      <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                      <span className="text-sm text-gray-300">
+                        Achieved <strong className="text-orange-400">20%</strong> faster load time
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <h4 className="font-semibold text-lg text-white mb-3">Skills Developed</h4>
+                  <div className="space-y-3">
+                    <div className="p-4 border border-gray-700 bg-gray-800/30 rounded-lg">
+                      <h5 className="font-medium text-white">Responsive Design Proficiency</h5>
+                      <p className="text-sm text-gray-400 mt-1">
+                        Mastered mobile-first design principles and cross-device compatibility
+                      </p>
+                    </div>
+                    <div className="p-4 border border-gray-700 bg-gray-800/30 rounded-lg">
+                      <h5 className="font-medium text-white">User Interface Optimization</h5>
+                      <p className="text-sm text-gray-400 mt-1">
+                        Enhanced user experience through intuitive design patterns
+                      </p>
+                    </div>
+                    <div className="p-4 border border-gray-700 bg-gray-800/30 rounded-lg">
+                      <h5 className="font-medium text-white">Performance Optimization</h5>
+                      <p className="text-sm text-gray-400 mt-1">
+                        Implemented best practices for fast loading and smooth interactions
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </CardContent>
@@ -446,8 +491,8 @@ export default function Portfolio() {
             <Card className="group bg-gray-800/50 border-gray-700 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-3 hover:rotate-1 overflow-hidden">
               <div className="aspect-video bg-gradient-to-br from-blue-500/10 to-indigo-500/10 relative overflow-hidden">
                 <Image
-                  src="/noiceland-cityscape-evening-skyline.jpg"
-                  alt="Noiceland Magazine - Modern Cityscape Evening View"
+                  src="/placeholder-54jot.png"
+                  alt="Noiceland Magazine Project"
                   width={350}
                   height={200}
                   className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
@@ -485,12 +530,9 @@ export default function Portfolio() {
                   variant="outline"
                   size="sm"
                   className="w-full bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all group-hover:scale-105"
-                  asChild
                 >
-                  <a href="/noiceland" target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Visit Site
-                  </a>
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  View Project
                 </Button>
               </CardContent>
             </Card>
@@ -498,8 +540,8 @@ export default function Portfolio() {
             <Card className="group bg-gray-800/50 border-gray-700 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-3 hover:rotate-1 overflow-hidden">
               <div className="aspect-video bg-gradient-to-br from-gray-500/10 to-slate-500/10 relative overflow-hidden">
                 <Image
-                  src="/luxury-car-rental-website-interface.png"
-                  alt="Car Dealership Website - Luxury Car Rental Interface"
+                  src="/placeholder-asucc.png"
+                  alt="Car Dealership Website Project"
                   width={350}
                   height={200}
                   className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
@@ -537,12 +579,9 @@ export default function Portfolio() {
                   variant="outline"
                   size="sm"
                   className="w-full bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all group-hover:scale-105"
-                  asChild
                 >
-                  <a href="https://moamengad15.github.io/my-website-cars/" target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Visit Site
-                  </a>
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  View Project
                 </Button>
               </CardContent>
             </Card>
@@ -550,8 +589,8 @@ export default function Portfolio() {
             <Card className="group bg-gray-800/50 border-gray-700 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-3 hover:rotate-1 overflow-hidden">
               <div className="aspect-video bg-gradient-to-br from-green-500/10 to-emerald-500/10 relative overflow-hidden">
                 <Image
-                  src="/steak-house-restaurant-website-interface.png"
-                  alt="Food Lover Website - Steak House Restaurant Interface"
+                  src="/placeholder-w9801.png"
+                  alt="Food Lover Website Project"
                   width={350}
                   height={200}
                   className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
@@ -589,12 +628,9 @@ export default function Portfolio() {
                   variant="outline"
                   size="sm"
                   className="w-full bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all group-hover:scale-105"
-                  asChild
                 >
-                  <a href="https://moamengad15.github.io/food-lover/" target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Visit Site
-                  </a>
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  View Project
                 </Button>
               </CardContent>
             </Card>
