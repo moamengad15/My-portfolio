@@ -101,19 +101,27 @@ export default function Portfolio() {
             technologies. Delivering exceptional user experiences through clean code and innovative design.
           </p>
 
-<Button
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button
+  asChild
   size="lg"
   className={`gap-2 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-1000 delay-700 hover:scale-105 ${
     isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
   }`}
 >
-  <a href="mailto:momengad63@gmail.com" className="flex items-center gap-2">
+  <a
+    href="https://mail.google.com/mail/?view=cm&to=momengad63@gmail.com"
+    target="_blank"
+    rel="noreferrer"
+    className="flex items-center gap-2"
+  >
     <Mail className="w-4 h-4" />
     Contact Me
   </a>
 </Button>
 
 <Button
+  asChild
   variant="outline"
   size="lg"
   className={`gap-2 bg-gray-800/80 border-gray-600 text-gray-200 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all duration-1000 delay-800 hover:scale-105 ${
@@ -131,6 +139,7 @@ export default function Portfolio() {
 </Button>
 
 <Button
+  asChild
   variant="outline"
   size="lg"
   className={`gap-2 bg-gray-800/80 border-gray-600 text-gray-200 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all duration-1000 delay-900 hover:scale-105 ${
@@ -147,7 +156,6 @@ export default function Portfolio() {
     View Projects
   </a>
 </Button>
-
 
           </div>
         </div>
@@ -519,57 +527,60 @@ export default function Portfolio() {
               </CardContent>
             </Card>
 
-            <Card className="group bg-gray-800/50 border-gray-700 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-3 hover:rotate-1 overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-gray-500/10 to-slate-500/10 relative overflow-hidden">
-                <Image
-                  src="/luxury-car-rental-website-interface.png"
-                  alt="Car Dealership Website - Luxury Car Rental Interface"
-                  width={350}
-                  height={200}
-                  className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent group-hover:from-black/60 transition-all duration-300"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-full p-3 animate-pulse">
-                    <ExternalLink className="w-6 h-6 text-blue-400" />
-                  </div>
-                </div>
-              </div>
-              <CardHeader>
-                <CardTitle className="text-xl text-white group-hover:text-blue-400 transition-colors">
-                  Car Dealership Website
-                </CardTitle>
-                <CardDescription className="text-gray-400">Responsive Business Website</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex flex-wrap gap-2">
-                  <Badge className="bg-orange-500/40 text-white border-orange-500/50 hover:scale-105 transition-transform">
-                    HTML
-                  </Badge>
-                  <Badge className="bg-blue-500/40 text-white border-blue-500/50 hover:scale-105 transition-transform">
-                    CSS
-                  </Badge>
-                  <Badge className="bg-yellow-500/40 text-black border-yellow-500/50 hover:scale-105 transition-transform">
-                    JavaScript
-                  </Badge>
-                </div>
-                <p className="text-sm text-gray-400 text-pretty leading-relaxed">
-                  Responsive car dealership website with high-resolution visuals and modern layouts. Optimized for
-                  cross-browser compatibility and seamless device access.
-                </p>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="w-full bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all group-hover:scale-105"
-                  asChild
-                >
-                  <a href="https://moamengad15.github.io/my-website-cars/" target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Visit Site
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
+           <Card className="group bg-gray-800/50 border-gray-700 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-3 hover:rotate-1 overflow-hidden">
+  <div className="aspect-video bg-gradient-to-br from-gray-500/10 to-slate-500/10 relative overflow-hidden">
+    <Image
+      src="/interface.png"
+      alt="E-Commerce Website - Modern Online Store"
+      width={350}
+      height={200}
+      className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent group-hover:from-black/60 transition-all duration-300"></div>
+    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div className="bg-white/10 backdrop-blur-sm rounded-full p-3 animate-pulse">
+        <ExternalLink className="w-6 h-6 text-blue-400" />
+      </div>
+    </div>
+  </div>
+  <CardHeader>
+    <CardTitle className="text-xl text-white group-hover:text-blue-400 transition-colors">
+      E-Commerce Website
+    </CardTitle>
+    <CardDescription className="text-gray-400">
+      Modern Online Store
+    </CardDescription>
+  </CardHeader>
+  <CardContent className="space-y-4">
+    <div className="flex flex-wrap gap-2">
+      <Badge className="bg-orange-500/40 text-white border-orange-500/50 hover:scale-105 transition-transform">
+        HTML
+      </Badge>
+      <Badge className="bg-blue-500/40 text-white border-blue-500/50 hover:scale-105 transition-transform">
+        CSS
+      </Badge>
+      <Badge className="bg-yellow-500/40 text-black border-yellow-500/50 hover:scale-105 transition-transform">
+        JavaScript
+      </Badge>
+    </div>
+    <p className="text-sm text-gray-400 text-pretty leading-relaxed">
+      A modern and fully responsive online store with an engaging product catalog, smooth shopping cart system, and a streamlined checkout flow for a seamless shopping experience.
+    </p>
+    <Button
+      variant="outline"
+      size="sm"
+      className="w-full bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all group-hover:scale-105"
+      asChild
+    >
+      <a href="https://moamengad15.github.io/ecommerce-app/" target="_blank" rel="noopener noreferrer">
+        <ExternalLink className="w-4 h-4 mr-2" />
+        Visit Site
+      </a>
+    </Button>
+  </CardContent>
+</Card>
+
+
 
             <Card className="group bg-gray-800/50 border-gray-700 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-3 hover:rotate-1 overflow-hidden">
               <div className="aspect-video bg-gradient-to-br from-green-500/10 to-emerald-500/10 relative overflow-hidden">
@@ -764,44 +775,55 @@ export default function Portfolio() {
                 work together to bring your ideas to life with cutting-edge web technologies.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-               <Button
-               asChild
-               size="lg"
-               className="gap-2 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all hover:scale-110 animate-pulse"
-               >
-               <a
-               href="https://outlook.live.com/mail/deeplink/compose?to=momengad63@gmail.com"
-               target="_blank"
-               rel="noreferrer"
-               className="flex items-center gap-2"
-               >
-               <Mail className="w-5 h-5" />
-               Send Email
-               </a>
-               </Button>
+<Button
+  asChild
+  size="lg"
+  className="gap-2 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all hover:scale-110 animate-pulse"
+>
+  <a
+    href="https://mail.google.com/mail/?view=cm&to=momengad63@gmail.com"
+    target="_blank"
+    rel="noreferrer"
+    className="flex items-center gap-2"
+  >
+    <Mail className="w-5 h-5" />
+    Send Email
+  </a>
+</Button>
 
-                <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="gap-2 bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all hover:scale-110"
-                >
-                <a href="https://github.com/moamengad15" target="_blank" rel="noreferrer" className="flex items-center gap-2">
-                <Github className="w-5 h-5" />
-                GitHub
-                </a>
-                </Button>
-               <Button
-               asChild
-               variant="outline"
-               size="lg"
-               className="gap-2 bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all hover:scale-110"
-               >
-               <a href="https://linkedin.com/in/moamen-gad" target="_blank" rel="noreferrer" className="flex items-center gap-2">
-               <Linkedin className="w-5 h-5" />
-               LinkedIn
-               </a>
-               </Button>
+<Button
+  asChild
+  variant="outline"
+  size="lg"
+  className="gap-2 bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all hover:scale-110"
+>
+  <a
+    href="https://github.com/moamengad15"
+    target="_blank"
+    rel="noreferrer"
+    className="flex items-center gap-2"
+  >
+    <Github className="w-5 h-5" />
+    GitHub
+  </a>
+</Button>
+
+<Button
+  asChild
+  variant="outline"
+  size="lg"
+  className="gap-2 bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all hover:scale-110"
+>
+  <a
+    href="https://linkedin.com/in/moamen-gad"
+    target="_blank"
+    rel="noreferrer"
+    className="flex items-center gap-2"
+  >
+    <Linkedin className="w-5 h-5" />
+    LinkedIn
+  </a>
+</Button>
 
               </div>
             </div>
@@ -813,7 +835,7 @@ export default function Portfolio() {
       <footer className="bg-gray-800/50 backdrop-blur-sm py-12 px-4 text-center border-t border-gray-700/50">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-wrap justify-center gap-8 mb-6">
-            <a href="mailto:momengad63@gmail.com" className="text-gray-400 hover:text-blue-400 transition-colors">
+            <a href="https://mail.google.com/mail/?view=cm&to=momengad63@gmail.com" className="text-gray-400 hover:text-blue-400 transition-colors">
               Email
             </a>
             <a href="https://github.com/moamengad15" className="text-gray-400 hover:text-blue-400 transition-colors">
@@ -827,7 +849,7 @@ export default function Portfolio() {
             </a>
           </div>
           <p className="text-gray-400">
-            © 2025 Moamen Gad. Built with love, creativity, and passion for great design.
+© 2025 Moamen Gad. Front-End Developer.
           </p>
         </div>
       </footer>
