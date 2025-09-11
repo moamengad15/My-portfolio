@@ -101,30 +101,43 @@ export default function Portfolio() {
             technologies. Delivering exceptional user experiences through clean code and innovative design.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4">
+          <Button
+          asChild
+          size="lg"
+          className={`gap-2 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-1000 delay-700 hover:scale-105 ${
+          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
+          >
+          <a href="mailto:momengad63@gmail.com" className="flex items-center gap-2">
+          <Mail className="w-4 h-4" />
+          Contact Me
+          </a>
+          </Button>
+
+
+           <Button
+           asChild
+           variant="outline"
+           size="lg"
+           className={`gap-2 bg-gray-800/80 border-gray-600 text-gray-200 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all duration-1000 delay-800 hover:scale-105 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
+           >
+           <a href="/Moamen-Gad-FlowCV-Resume.pdf" download className="flex items-center gap-2">
+           <Download className="w-4 h-4" />
+           Download CV
+           </a>
+           </Button>
+
             <Button
-              size="lg"
-              className={`gap-2 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-1000 delay-700 hover:scale-105 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
-            >
-              <Mail className="w-4 h-4" />
-              Contact Me
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className={`gap-2 bg-gray-800/80 border-gray-600 text-gray-200 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all duration-1000 delay-800 hover:scale-105 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
-            >
-              <Download className="w-4 h-4" />
-              Download CV
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className={`gap-2 bg-gray-800/80 border-gray-600 text-gray-200 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all duration-1000 delay-900 hover:scale-105 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
-            >
-              <ExternalLink className="w-4 h-4" />
-              View Projects
-            </Button>
+            asChild
+            variant="outline"
+  size="lg"
+  className={`gap-2 bg-gray-800/80 border-gray-600 text-gray-200 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all duration-1000 delay-900 hover:scale-105 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
+>
+  <a href="https://github.com/moamengad15" target="_blank" rel="noreferrer" className="flex items-center gap-2">
+    <ExternalLink className="w-4 h-4" />
+    View Projects
+  </a>
+</Button>
+
           </div>
         </div>
       </section>
@@ -740,29 +753,45 @@ export default function Portfolio() {
                 work together to bring your ideas to life with cutting-edge web technologies.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
+               <Button
+               asChild
+               size="lg"
+               className="gap-2 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all hover:scale-110 animate-pulse"
+               >
+               <a
+               href="https://outlook.live.com/mail/deeplink/compose?to=momengad63@gmail.com"
+               target="_blank"
+               rel="noreferrer"
+               className="flex items-center gap-2"
+               >
+               <Mail className="w-5 h-5" />
+               Send Email
+               </a>
+               </Button>
+
                 <Button
-                  size="lg"
-                  className="gap-2 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all hover:scale-110 animate-pulse"
+                asChild
+                variant="outline"
+                size="lg"
+                className="gap-2 bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all hover:scale-110"
                 >
-                  <Mail className="w-5 h-5" />
-                  Send Email
+                <a href="https://github.com/moamengad15" target="_blank" rel="noreferrer" className="flex items-center gap-2">
+                <Github className="w-5 h-5" />
+                GitHub
+                </a>
                 </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="gap-2 bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all hover:scale-110"
-                >
-                  <Github className="w-5 h-5" />
-                  GitHub
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="gap-2 bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all hover:scale-110"
-                >
-                  <Linkedin className="w-5 h-5" />
-                  LinkedIn
-                </Button>
+               <Button
+               asChild
+               variant="outline"
+               size="lg"
+               className="gap-2 bg-gray-700/50 border-gray-600 text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all hover:scale-110"
+               >
+               <a href="https://linkedin.com/in/moamen-gad" target="_blank" rel="noreferrer" className="flex items-center gap-2">
+               <Linkedin className="w-5 h-5" />
+               LinkedIn
+               </a>
+               </Button>
+
               </div>
             </div>
           </Card>
@@ -787,7 +816,7 @@ export default function Portfolio() {
             </a>
           </div>
           <p className="text-gray-400">
-            © 2024 Moamen Gad. Built with Next.js, Tailwind CSS, and passion for great design.
+            © 2025 Moamen Gad. Built with love, creativity, and passion for great design.
           </p>
         </div>
       </footer>
