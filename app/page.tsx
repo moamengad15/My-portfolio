@@ -101,42 +101,53 @@ export default function Portfolio() {
             technologies. Delivering exceptional user experiences through clean code and innovative design.
           </p>
 
-          <Button
-          asChild
-          size="lg"
-          className={`gap-2 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-1000 delay-700 hover:scale-105 ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
-          >
-          <a href="mailto:momengad63@gmail.com" className="flex items-center gap-2">
-          <Mail className="w-4 h-4" />
-          Contact Me
-          </a>
-          </Button>
-
-
-           <Button
-           asChild
-           variant="outline"
-           size="lg"
-           className={`gap-2 bg-gray-800/80 border-gray-600 text-gray-200 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all duration-1000 delay-800 hover:scale-105 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
-           >
-           <a href="/Moamen-Gad-FlowCV-Resume.pdf" download className="flex items-center gap-2">
-           <Download className="w-4 h-4" />
-           Download CV
-           </a>
-           </Button>
-
-            <Button
-            asChild
-            variant="outline"
+<Button
   size="lg"
-  className={`gap-2 bg-gray-800/80 border-gray-600 text-gray-200 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all duration-1000 delay-900 hover:scale-105 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
+  className={`gap-2 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-1000 delay-700 hover:scale-105 ${
+    isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+  }`}
 >
-  <a href="https://github.com/moamengad15" target="_blank" rel="noreferrer" className="flex items-center gap-2">
+  <a href="mailto:momengad63@gmail.com" className="flex items-center gap-2">
+    <Mail className="w-4 h-4" />
+    Contact Me
+  </a>
+</Button>
+
+<Button
+  variant="outline"
+  size="lg"
+  className={`gap-2 bg-gray-800/80 border-gray-600 text-gray-200 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all duration-1000 delay-800 hover:scale-105 ${
+    isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+  }`}
+>
+  <a
+    href="/Moamen-Gad-FlowCV-Resume.pdf"
+    download
+    className="flex items-center gap-2"
+  >
+    <Download className="w-4 h-4" />
+    Download CV
+  </a>
+</Button>
+
+<Button
+  variant="outline"
+  size="lg"
+  className={`gap-2 bg-gray-800/80 border-gray-600 text-gray-200 hover:bg-blue-600 hover:text-white hover:border-blue-600 backdrop-blur-sm transition-all duration-1000 delay-900 hover:scale-105 ${
+    isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+  }`}
+>
+  <a
+    href="https://github.com/moamengad15"
+    target="_blank"
+    rel="noreferrer"
+    className="flex items-center gap-2"
+  >
     <ExternalLink className="w-4 h-4" />
     View Projects
   </a>
 </Button>
+
 
           </div>
         </div>
